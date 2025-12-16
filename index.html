@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jada Bellille | Graphic Design Portfolio</title>
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Comic+Neue&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="w3-bar w3-card w3-padding">
+  <span class="w3-bar-item w3-large">🍓 Jada Bellille</span>
+  <a href="index.html" class="w3-bar-item w3-button w3-right">Home</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-right">Gallery</a> <!-- Link updated -->
+  <a href="#about" class="w3-bar-item w3-button w3-right">About</a>
+  <a href="#resume" class="w3-bar-item w3-button w3-right">Resume</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-right">Contact</a>
+</div>
+
+
+  <!-- HERO / WELCOME -->
+  <header id="home" class="w3-display-container">
+    <img src="images/IMG_0492.jpg" alt="Portfolio Hero" style="width:100%; height:90vh; object-fit:cover;">
+    <div class="w3-display-middle w3-center w3-text-white">
+      <h1 class="w3-xxlarge">Hi, I’m Jada Bellille</h1>
+      <p class="w3-large">Graphic Designer & Creative Thinker</p>
+    </div>
+  </header>
+
+  <!-- GALLERY / SLIDESHOW -->
+  
+    <h2 class="w3-center">Portfolio Gallery</h2>
+
+    <div class="w3-content w3-display-container gallery-container">
+      <img class="mySlides w3-animate-fading" src="images/JB-img-2-72.jpg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/JB 4_last-try.jpg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/JB 2-img-4x6.jpg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="images/JB7-img-72.jpg" style="width:100%">
+
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">❮</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(1)">❯</button>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about" class="w3-container w3-padding-64 w3-white">
+    <h2 class="w3-center">About Me</h2>
+    <div class="w3-row-padding w3-center">
+      <div class="w3-half w3-center">
+        <img src="images/IMG_0492.jpg" alt="Jada Bellille" style="max-width:250px; border-radius:50%; box-shadow:0 6px 18px rgba(0,0,0,0.1);">
+      </div>
+      <div class="w3-half">
+        <p>Hello! I’m Jada Bellille, a passionate graphic designer focused on creating visually stunning and playful designs. I love blending color, typography, and creativity to bring ideas to life. When I’m not designing, I enjoy photography and experimenting with new art styles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="w3-container w3-padding-64 w3-light-grey resume">
+    <h2 class="w3-center">Resume</h2>
+    <h3>Jada Bellille</h3>
+    <p><strong>Email:</strong> jada.bellille@gmail.com</p>
+
+    <h3>Education</h3>
+    <ul>
+      <li>Bachelor of Design — New York City College Of Technology — 2027</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>Adobe Creative Suite</li>
+      <li>Photography</li>
+      <li>Illustration & Typography</li>
+      <li>Web Design & Front-End</li>
+    </ul>
+
+    <h3>Experience</h3>
+    <ul>
+      <li>Lead Designer — GDG (Google Design Club @City Tech) — 2025-2026</li>
+      <li>Freelance Design Projects — Self-Employed — 2022-Present</li>
+      <li> Barista - Somedays Bakery - 2025-Present</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="w3-container w3-padding-64 w3-white">
+    <h2 class="w3-center">Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="w3-container w3-center w3-padding-16">
+    <p>&copy; 2025 Jada Bellille</p>
+  </footer>
+
+  <!-- JAVASCRIPT SLIDESHOW -->
+  <script>
+    let slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+
