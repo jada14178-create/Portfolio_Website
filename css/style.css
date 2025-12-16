@@ -1,0 +1,195 @@
+/* =======================
+   FONTS & BODY
+======================= */
+body {
+    font-family: 'Comic Neue', Arial, sans-serif;
+    background-color: #fff0f5; /* very soft pink */
+    color: #4a2a4a; /* dark pink text */
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #c71585; /* deep pink */
+    letter-spacing: 1px;
+}
+
+/* =======================
+   NAVIGATION BAR
+======================= */
+.w3-bar {
+    background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.w3-bar a {
+    color: #fff !important;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.w3-bar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffe4e1;
+    transition: width 0.3s ease-in-out;
+}
+
+.w3-bar a:hover::after {
+    width: 100%;
+}
+
+.w3-bar a:hover {
+    transform: translateY(-2px);
+    color: #ffe4e1 !important;
+}
+
+/* =======================
+   HERO TEXT
+======================= */
+header h1, header p {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* =======================
+   SLIDESHOW / GALLERY
+======================= */
+.gallery-container img {
+    border-radius: 12px;
+    max-height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.w3-button {
+    background-color: #ff69b4 !important;
+    color: #fff !important;
+    border-radius: 50%;
+    padding: 12px 18px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.w3-button:hover {
+    background-color: #ff1493 !important;
+    transform: scale(1.1);
+}
+
+/* =======================
+   ABOUT SECTION
+======================= */
+#about img {
+    border-radius: 50%;
+    max-width: 250px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* =======================
+   MENU / THUMBNAILS
+======================= */
+.thumb {
+    background: #fff0f5;
+    padding: 15px;
+    border: 2px solid #ffb6c1;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 500;
+}
+
+.thumb:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-color: #ff69b4;
+}
+
+/* =======================
+   RESUME
+======================= */
+.resume h3 {
+    color: #c71585;
+}
+
+.resume ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* =======================
+   CONTACT FORM
+======================= */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 4px 12px rgba(255,105,180,0.2);
+}
+
+form button {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background-color: #ff69b4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+/* =======================
+   GENERAL TRANSITIONS
+======================= */
+* {
+    transition: all 0.3s ease;
+}
+
+
+

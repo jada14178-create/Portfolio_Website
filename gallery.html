@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jada Bellille | Gallery</title>
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<div class="w3-bar w3-card w3-padding">
+  <span class="w3-bar-item w3-large" style="font-family: 'Pacifico', cursive;">🍓 Jada Bellille</span>
+  <a href="portfolio_site.html" class="w3-bar-item w3-button w3-right">Home</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-right">Gallery</a>
+  <a href="#about" class="w3-bar-item w3-button w3-right">About</a>
+  <a href="#resume" class="w3-bar-item w3-button w3-right">Resume</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right">Contact</a>
+</div>
+
+<!-- HERO -->
+<header class="w3-display-container w3-padding-64" style="background: #ffc0cb;">
+  <div class="w3-display-middle w3-center">
+    <h1 style="font-family: 'Pacifico', cursive;">My Gallery</h1>
+    <p>Explore my design and art projects!</p>
+  </div>
+</header>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="w3-container w3-padding-64">
+  <div class="w3-content w3-display-container gallery-container" style="max-width:900px; margin:auto;">
+    <img class="mySlides w3-animate-fading" src="images/JB-img-2-72.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/JB 4_last-try.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/JB 2-img-4x6.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/JB7-img-72.jpg" style="width:100%">
+
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">❮</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(1)">❯</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="w3-container w3-center w3-padding-16">
+  <p>&copy; 2025 Jada Bellille</p>
+</footer>
+
+<!-- JavaScript Slideshow -->
+<script>
+  let slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
+</script>
+
+</body>
+</html>
+
+
